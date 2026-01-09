@@ -1,9 +1,3 @@
-
 export const CoinDetail = () => {
-
-
-  return (
-    <>
-    </>
-  );
+  return <>This is the coin page</>;
 };
