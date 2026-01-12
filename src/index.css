@@ -128,7 +128,8 @@ body {
 }
 
 .filter-group select:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #000;
+  color: #fff;
 }
 
 .filter-group select:focus {
