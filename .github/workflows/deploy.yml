@@ -1,0 +1,30 @@
+name: React + Vite CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # check out the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # setup Nodejs
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Install Dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Build the Project
+      - name: Build Project
+        run: npm run build
